@@ -1,0 +1,14 @@
+<aside class="sidebar-container">
+  <h3 class="sidebar-title">Últimas notícias</h3>
+  <ul class="recent-posts-list">
+    <ng-container *ngIf="recentPosts.length > 0; else noPosts">
+      <li *ngFor="let post of recentPosts">
+        <a href="#" class="post-title-link">{{ post.title }}</a>
+        <p class="post-date">{{ post.publicationDate | date:'dd/MM/yyyy' }}</p>
+      </li>
+    </ng-container>
+    <ng-template #noPosts>
+      <li>Nenhuma notícia recente.</li>
+    </ng-template>
+  </ul>
+</aside>

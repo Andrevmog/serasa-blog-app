@@ -1,0 +1,21 @@
+<main class="home-container">
+  <div *ngIf="isLoading" class="status-indicator">
+    <p>Carregando publicações...</p>
+  </div>
+
+  <div *ngIf="!isLoading && error" class="status-indicator error">
+    <p>{{ error }}</p>
+  </div>
+
+  <div *ngIf="!isLoading && !error" class="main-layout">
+
+    <section class="content-column">
+      <app-post-list [allPosts]="posts"></app-post-list>
+    </section>
+
+    <aside class="sidebar-column">
+      <app-sidebar [posts]="posts"></app-sidebar>
+    </aside>
+
+  </div>
+</main>

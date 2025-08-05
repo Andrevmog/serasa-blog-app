@@ -1,0 +1,7 @@
+<app-controls
+  [authors]="authors"
+  (filterChanged)="onFilterChanged($event)"
+  (sortChanged)="onSortChanged($event)">
+</app-controls>
+
+<app-post-card *ngFor="let post of displayedPosts" [post]="post"></app-post-card>

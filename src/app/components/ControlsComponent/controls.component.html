@@ -1,0 +1,18 @@
+<div class="controls-container">
+  <div class="control-group">
+    <select (change)="onFilterChange($event)" aria-label="Filtrar por autor">
+      <option value="all">Filtrar por autor</option>
+      <option *ngFor="let author of authors" [value]="author">
+        {{ author }}
+      </option>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <select (change)="onSortChange($event)" aria-label="Ordenar por">
+      <option value="desc">Ordenar por</option>
+      <option value="desc">Mais recentes</option>
+      <option value="asc">Mais antigos</option>
+    </select>
+  </div>
+</div>

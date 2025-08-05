@@ -75,7 +75,8 @@
               "browserTarget": "serasa-blog-app:build:production"
             },
             "development": {
-              "browserTarget": "serasa-blog-app:build:development"
+              "browserTarget": "serasa-blog-app:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

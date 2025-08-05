@@ -1,0 +1,21 @@
+.app-header {
+  background-color: #ffffff;
+  padding: 1rem 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: #333;
+
+  .logo-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; // Negrito
+    font-size: 1.5rem;
+  }
+}

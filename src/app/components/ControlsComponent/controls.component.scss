@@ -1,0 +1,26 @@
+/* Estilização para os botões de controle */
+.controls-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+select {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #DAF2EC;
+  cursor: pointer;
+  font-size: 16px;
+  color: #07A46C;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:focus{
+    background-color: #AAF0DF;
+    color: #088B5D;
+    outline: none;
+  }
+}

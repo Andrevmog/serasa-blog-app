@@ -1,0 +1,64 @@
+/* Estilização para o card, replicando o visual da imagem */
+:host {
+  display: block;
+  border-top: 1px solid #e0e0e0;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.post-card{
+ padding-top: 40px
+}
+
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.author-name {
+  font-weight: bold;
+  color: #e04c85;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: Inter;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.post-date {
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.post-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+p {
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #58595D;
+}
+
+.card-actions img {
+  margin-left: 0.75rem;
+  cursor: pointer;
+}

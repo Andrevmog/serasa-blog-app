@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://run.mocky.io",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

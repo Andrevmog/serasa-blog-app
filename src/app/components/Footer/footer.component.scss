@@ -1,0 +1,41 @@
+.app-footer {
+  background-color: #ececf4;
+  border-top: 1px solid #e0e0e0;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo .logo-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.copyright-text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  color: #666;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+// Responsividade para o footer
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,50 @@
+// Estilo para o container principal da página
+.home-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+// Layout principal que divide a tela em duas colunas
+.main-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem; // Espaçamento entre as colunas
+  align-items: flex-start;
+}
+
+// Coluna da esquerda, para a lista de posts
+.content-column {
+  flex: 2; // Ocupa 2/3 do espaço
+  min-width: 0;
+}
+
+// Coluna da direita, para a barra lateral
+.sidebar-column {
+  flex: 1; // Ocupa 1/3 do espaço
+  min-width: 0;
+  position: sticky; // Mantém a sidebar fixa no topo ao rolar a página
+  top: 2rem;
+}
+
+// Estilo para as mensagens de carregamento e erro
+.status-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  font-size: 1.2rem;
+  color: #666;
+
+  &.error {
+    color: #d9534f;
+    font-weight: bold;
+  }
+}
+
+// Responsividade para telas menores
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column-reverse; // Empilha as colunas
+  }
+}
