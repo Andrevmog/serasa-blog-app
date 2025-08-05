@@ -4,5 +4,5 @@ export interface PostWithAuthor {
   title: string;
   body: string;
   authorName: string;
-  publicationDate: Date; // Usar objeto Date para facilitar ordenação
+  publicationDate: Date;
 }

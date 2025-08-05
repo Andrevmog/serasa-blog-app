@@ -7,6 +7,5 @@ import { PostWithAuthor } from '../../models/post-with-author.model';
   styleUrls: ['./post-card.component.scss']
 })
 export class PostCardComponent {
-  // O decorator @Input permite que este componente receba os dados de um componente pai.
   @Input() post!: PostWithAuthor;
 }

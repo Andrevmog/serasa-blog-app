@@ -4,7 +4,6 @@ import { PostWithAuthor } from '../../models/post-with-author.model';
 
 @Component({
   selector: 'app-home-page',
-  // As linhas 'standalone: true' e 'imports: [...]' foram removidas.
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

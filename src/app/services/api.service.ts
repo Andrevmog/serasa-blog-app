@@ -49,9 +49,6 @@ export class ApiService {
       publicationDate: new Date(post.createdAt),
     }));
 
-    // 3. Usamos 'of()' para criar um Observable que emite os dados combinados imediatamente.
-    // Adicionamos 'delay(500)' para simular o tempo de uma chamada de rede,
-    // o que ajuda a garantir que indicadores de 'loading' na UI funcionem como esperado.
     return of(combinedData).pipe(delay(500));
   }
 }
