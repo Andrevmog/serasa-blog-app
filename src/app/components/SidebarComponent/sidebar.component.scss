@@ -56,3 +56,9 @@
     color: #E04C85;
   }
 }
+
+@media  (max-width: 768px) {
+  .sidebar-container {
+  display: none;
+}
+}
