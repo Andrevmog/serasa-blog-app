@@ -32,7 +32,7 @@ export class ApiService {
     ];
 
     const mockAuthors: Author[] = [
-      { "id": 1, "name": "SOPHIE HAWK" },
+      { "id": 1, "name": "Sophie Hawk" },
       { "id": 2, "name": "Nicholas Jordan" },
       { "id": 3, "name": "Zinnia Rickard" },
       { "id": 4, "name": "Zinnia Rickard" }
